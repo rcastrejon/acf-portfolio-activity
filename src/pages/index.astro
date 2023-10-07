@@ -5,62 +5,98 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Rodrigo Castrejón">
   <main>
     <div class="p-4">
-      <section id="about" class="mt-32 px-4">
-        <div class="space-y-8">
-          <span class="font-thin underline text-4xl">Rodrigo Castrejón</span>
-          <h1 class="font-serif text-3xl">Full-stack web developer.</h1>
-          <div class="space-y-4">
-            <p>
-              My proficiency spans a spectrum of programming languages,
-              including Python, Ruby, and TypeScript. I bring creativity and
-              depth to frontend development, having honed my skills in React,
-              Next.js, and Angular. For backend solutions, I have a wealth of
-              experience with Rails, Express.js, and Django. I'm an ardent
-              advocate for continuous self-improvement.
-            </p>
-            <p>
-              My unyielding commitment to learning allows me to embrace new
-              challenges, adapt to evolving requirements, and swiftly acquire
-              the tools necessary to bolster the team's success.
-            </p>
+      <section id="about" class="mt-32 px-4 sm:grid lg:grid-cols-5 lg:mt-20">
+        <div
+          class="sm:mt-20 lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0"
+        >
+          <div class="space-y-8">
+            <span class="font-thin underline text-4xl">Rodrigo Castrejón</span>
+            <h1 class="font-serif text-3xl lg:text-7xl">
+              Full-stack web developer.
+            </h1>
+            <div class="space-y-4 lg:text-4xl">
+              <p>
+                My proficiency spans a spectrum of programming languages,
+                including Python, Ruby, and TypeScript. I bring creativity and
+                depth to frontend development, having honed my skills in React,
+                Next.js, and Angular. For backend solutions, I have a wealth of
+                experience with Rails, Express.js, and Django. I'm an ardent
+                advocate for continuous self-improvement.
+              </p>
+              <p>
+                My unyielding commitment to learning allows me to embrace new
+                challenges, adapt to evolving requirements, and swiftly acquire
+                the tools necessary to bolster the team's success.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="education" class="px-4">
-        <div class="my-12">
-          <div class="pb-5 border-foreground border-b">
-            <h2 class="text-3xl font-serif">Education & Experience</h2>
-          </div>
-        </div>
-        <div>
-          <div class="mt-12 mb-6">
+      <section
+        id="education"
+        class="px-4 my-12 sm:grid lg:grid-cols-5 lg:mt-20"
+      >
+        <div class="lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0">
+          <div class="my-12">
             <div class="pb-5 border-foreground border-b">
-              <span class="text-muted-foreground">May 2022 - Present</span>
-              <h2 class="text-lg font-serif uppercase">Dealer Geek</h2>
-            </div>
-          </div>
-          <p>
-            Currently, as a Full-stack Developer at Dealer Geek, I am actively
-            involved in the development of web applications. I utilize Python,
-            Flask, and FastAPI for backend development, with MongoDB as the
-            database solution. On the frontend, I employ Angular and Tailwind to
-            create user-friendly interfaces that enhance the overall user
-            experience.
-          </p>
-        </div>
-        <div>
-          <div class="mt-12 mb-6">
-            <div class="pb-5 border-foreground border-b">
-              <span class="text-muted-foreground">2020 - Winter 2024</span>
-              <h2 class="text-lg font-serif uppercase">
-                Universidad Autónoma de Yucatán
+              <h2 class="text-3xl font-serif lg:text-6xl">
+                Education & Experience
               </h2>
             </div>
           </div>
-          <p>
-            Seventh semester Software Engineering student with an average grade
-            of 94.68 out of 100.
+          <div class="[&>div]:mb-24 lg:flex gap-5">
+            <div class="lg:flex-1">
+              <div class="mt-12 mb-6">
+                <div class="pb-5 border-foreground border-b">
+                  <span class="text-muted-foreground text-sm"
+                    >May 2022 - Present</span
+                  >
+                  <h2 class="text-lg font-serif uppercase">Dealer Geek</h2>
+                </div>
+              </div>
+              <p class="text-sm">
+                Currently, as a Full-stack Developer at Dealer Geek, I am
+                actively involved in the development of web applications. I
+                utilize Python, Flask, and FastAPI for backend development, with
+                MongoDB as the database solution. On the frontend, I employ
+                Angular and Tailwind to create user-friendly interfaces that
+                enhance the overall user experience.
+              </p>
+            </div>
+            <div class="lg:flex-1">
+              <div class="mt-12 mb-6">
+                <div class="pb-5 border-foreground border-b">
+                  <span class="text-muted-foreground text-sm"
+                    >2020 - Winter 2024</span
+                  >
+                  <h2 class="text-lg font-serif uppercase">
+                    Universidad Autónoma de Yucatán
+                  </h2>
+                </div>
+              </div>
+              <p class="text-sm">
+                Seventh semester Software Engineering student with an average
+                grade of 94.68 out of 100.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="px-4 lg:grid lg:grid-cols-5 lg:mt-20">
+        <div
+          class="lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0 space-y-8"
+        >
+          <a
+            href="mailto:r_castrejon@icloud.com"
+            class="font-serif text-2xl sm:text-3xl underline hover:text-muted-foreground transition-colors duration-100 ease-in-out lg:text-6xl xl:text-7xl"
+            >r_castrejon@icloud.com</a
+          >
+          <p class="pb-32 lg:text-4xl">
+            Feel free to reach out to me with any inquiries or opportunities.
+            I'm always open to connecting and discussing how I can contribute to
+            your projects. I look forward to hearing from you!
           </p>
         </div>
       </section>

@@ -23,28 +23,37 @@ const { title } = Astro.props;
     />
   </head>
   <body>
-    <nav class="flex justify-evenly py-3 flex-wrap gap-3">
-      <a
-        href="#about"
-        class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out"
-        >About</a
-      >
-      <a
-        href="#education"
-        class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out"
-        >Education & Experience</a
-      >
-      <a
-        href="#projects"
-        class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out"
-        >Projects</a
-      >
-      <a
-        href="#contact"
-        class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out"
-        >Contact</a
-      >
-    </nav>
+    <div
+      class="fixed top-0 left-0 right-0 bottom-0 pointer-events-none z-50 flex"
+    >
+      <div>
+        <nav
+          id="navbar"
+          class="flex justify-evenly py-3 flex-wrap gap-3 bg-background sm:justify-start sm:space-x-3 lg:flex-col lg:items-end lg:justify-end lg:mt-24"
+        >
+          <a
+            href="#about"
+            class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out pointer-events-auto"
+            >About</a
+          >
+          <a
+            href="#education"
+            class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out pointer-events-auto"
+            >Education & Experience</a
+          >
+          <a
+            href="#projects"
+            class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out pointer-events-auto"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="font-serif text-lg hover:text-muted-foreground transition-colors duration-100 ease-in-out pointer-events-auto"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
     <slot />
   </body>
 </html>
