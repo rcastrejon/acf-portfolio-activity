@@ -2,58 +2,84 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Rodrigo Castrejón">
-  <main>
-    <div class="p-4">
-      <section id="about" class="mt-32 px-4 sm:grid lg:grid-cols-5 lg:mt-20">
-        <div
-          class="sm:mt-20 lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0"
+<Layout title="Portfolio">
+  <div
+    class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 z-50 lg:grid lg:grid-cols-5"
+  >
+    <header
+      class="pointer-events-auto flex justify-center bg-background sm:justify-start lg:flex-col"
+    >
+      <nav class="my-3 lg:mt-24">
+        <ul
+          class="flex flex-wrap justify-center sm:justify-start lg:flex-col lg:gap-3 sm:[&>*:first-child]:pl-0"
         >
-          <div class="space-y-8">
-            <span class="font-thin underline text-4xl">Rodrigo Castrejón</span>
-            <h1 class="font-serif text-3xl lg:text-7xl">
-              Full-stack web developer.
-            </h1>
-            <div class="space-y-4 lg:text-4xl">
-              <p>
-                My proficiency spans a spectrum of programming languages,
-                including Python, Ruby, and TypeScript. I bring creativity and
-                depth to frontend development, having honed my skills in React,
-                Next.js, and Angular. For backend solutions, I have a wealth of
-                experience with Rails, Express.js, and Django. I'm an ardent
-                advocate for continuous self-improvement.
-              </p>
-              <p>
-                My unyielding commitment to learning allows me to embrace new
-                challenges, adapt to evolving requirements, and swiftly acquire
-                the tools necessary to bolster the team's success.
-              </p>
-            </div>
+          <li class="px-3 lg:px-0 lg:pl-10 lg:text-right">
+            <a
+              class="font-serif text-lg font-medium transition-colors duration-100 ease-in-out hover:text-muted-foreground"
+              href="#about">About</a
+            >
+          </li>
+          <li class="px-3 lg:px-0 lg:pl-10 lg:text-right">
+            <a
+              class="font-serif text-lg font-medium transition-colors duration-100 ease-in-out hover:text-muted-foreground"
+              href="#e-and-e">Experience & Education</a
+            >
+          </li>
+          <li class="px-3 lg:px-0 lg:pl-10 lg:text-right">
+            <a
+              class="font-serif text-lg font-medium transition-colors duration-100 ease-in-out hover:text-muted-foreground"
+              href="#projects">Projects</a
+            >
+          </li>
+          <li class="px-3 lg:px-0 lg:pl-10 lg:text-right">
+            <a
+              class="font-serif text-lg font-medium transition-colors duration-100 ease-in-out hover:text-muted-foreground"
+              href="#contact">Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <main class="space-y-12 px-8 py-4">
+      <section id="about" class="mt-32">
+        <div class="space-y-8">
+          <span class="text-4xl font-thin underline">Rodrigo Castrejón</span>
+          <h1 class="font-serif text-3xl lg:text-7xl">
+            Full-stack web developer.
+          </h1>
+          <div class="space-y-4 lg:text-4xl">
+            <p>
+              My proficiency spans a spectrum of programming languages,
+              including Python, Ruby, and TypeScript. I bring creativity and
+              depth to frontend development, having honed my skills in React,
+              Next.js, and Angular. For backend solutions, I have a wealth of
+              experience with Rails, Express.js, and Django.
+            </p>
+            <p>
+              My unyielding commitment to learning allows me to embrace new
+              challenges, adapt to evolving requirements, and swiftly acquire
+              the tools necessary to bolster the team's success.
+            </p>
           </div>
         </div>
       </section>
 
-      <section
-        id="education"
-        class="px-4 my-12 sm:grid lg:grid-cols-5 lg:mt-20"
-      >
-        <div class="lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0">
-          <div class="my-12">
-            <div class="pb-5 border-foreground border-b">
-              <h2 class="text-3xl font-serif lg:text-6xl">
-                Education & Experience
-              </h2>
-            </div>
-          </div>
-          <div class="[&>div]:mb-24 lg:flex gap-5">
-            <div class="lg:flex-1">
-              <div class="mt-12 mb-6">
-                <div class="pb-5 border-foreground border-b">
-                  <span class="text-muted-foreground text-sm"
-                    >May 2022 - Present</span
-                  >
-                  <h2 class="text-lg font-serif uppercase">Dealer Geek</h2>
-                </div>
+      <section id="e-and-e">
+        <div class="mb-6 border-b border-foreground pb-5">
+          <h1 class="font-serif text-3xl font-medium">
+            Experience & Education
+          </h1>
+        </div>
+        <div class="mt-12">
+          <ul class="grid grid-cols-1 grid-rows-2 gap-12">
+            <li class="flex flex-col gap-10">
+              <div class="border-b border-foreground pb-5">
+                <span class="text-sm text-muted-foreground"
+                  >May 2022 - Pesent</span
+                >
+                <h2 class="font-serif text-lg uppercase">Dealer Geek</h2>
               </div>
               <p class="text-sm">
                 Currently, as a Full-stack Developer at Dealer Geek, I am
@@ -63,43 +89,41 @@ import Layout from "../layouts/Layout.astro";
                 Angular and Tailwind to create user-friendly interfaces that
                 enhance the overall user experience.
               </p>
-            </div>
-            <div class="lg:flex-1">
-              <div class="mt-12 mb-6">
-                <div class="pb-5 border-foreground border-b">
-                  <span class="text-muted-foreground text-sm"
-                    >2020 - Winter 2024</span
-                  >
-                  <h2 class="text-lg font-serif uppercase">
-                    Universidad Autónoma de Yucatán
-                  </h2>
-                </div>
+            </li>
+            <li class="flex flex-col gap-10">
+              <div class="border-b border-foreground pb-5">
+                <span class="text-sm text-muted-foreground"
+                  >2020 - Winter 2024</span
+                >
+                <h2 class="font-serif text-lg uppercase">
+                  Universidad Autónoma de Yucatán
+                </h2>
               </div>
               <p class="text-sm">
                 Seventh semester Software Engineering student with an average
                 grade of 94.68 out of 100.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
-
-      <section id="contact" class="px-4 lg:grid lg:grid-cols-5 lg:mt-20">
+      <section id="contact">
         <div
-          class="lg:col-span-4 lg:col-start-2 lg:pl-8 lg:pr-24 lg:mt-0 space-y-8"
+          class="space-y-8 lg:col-span-4 lg:col-start-2 lg:mt-0 lg:pl-8 lg:pr-24"
         >
           <a
             href="mailto:r_castrejon@icloud.com"
-            class="font-serif text-2xl sm:text-3xl underline hover:text-muted-foreground transition-colors duration-100 ease-in-out lg:text-6xl xl:text-7xl"
+            class="font-serif text-2xl underline transition-colors duration-100 ease-in-out hover:text-muted-foreground sm:text-3xl lg:text-6xl xl:text-7xl"
             >r_castrejon@icloud.com</a
           >
           <p class="pb-32 lg:text-4xl">
-            Feel free to reach out to me with any inquiries or opportunities.
             I'm always open to connecting and discussing how I can contribute to
             your projects. I look forward to hearing from you!
           </p>
         </div>
       </section>
-    </div>
-  </main>
+    </main>
+  </div>
 </Layout>
+
+<script src="../scripts/navbar-offset.js"></script>
